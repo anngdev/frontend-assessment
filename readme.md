@@ -3,7 +3,7 @@ Project Setup
 This project uses **Vue 3** and **Tailwind CSS**. To get started, follow these steps:
 1. Clone the repository:
 ```bash
-git clone [https://github.com/anngdev/frontend-assessment.git
+git clone https://github.com/anngdev/frontend-assessment.git
 ```
 2. Navigate to the project directory
 ```bash
@@ -20,9 +20,9 @@ npm run dev
 
 Live Demos
 ---
-Exercise 1: https://github.com/anngdev
+Exercise 1: https://anngmindarcfe.pages.dev/exercise1
 
-Exercise 2: https://github.com/anngdev
+Exercise 2: https://anngmindarcfe.pages.dev/exercise2
 
 
 The 🍌 Explained
