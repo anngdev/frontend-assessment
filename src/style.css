@@ -1,0 +1,18 @@
+/* src/style.css */
+
+/* Tailwind CSS directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ul {
+  @apply list-disc list-inside;
+}
+
+li {
+  @apply ml-4 mb-2;
+}
+
+.exercise1 {
+  @apply mx-auto;
+}

@@ -1,0 +1,34 @@
+.tab-panel {
+  @apply relative rounded-lg border border-primary-border m-4 transition-all overflow-hidden;
+
+  &__header {
+    @apply relative flex bg-primary-light overflow-hidden h-10;
+
+    &__active-background {
+      @apply absolute h-10 bg-primary-main z-0;
+    }
+
+    &__item {
+      &--active {
+        @apply text-text-light flex-1 transition-colors duration-300 z-10;
+      }
+
+      &--inactive {
+        @apply text-text-dark flex-1 transition-colors duration-300 z-10;
+        @apply border-primary-border border-r;
+
+        &:hover {
+          @apply bg-primary-hover;
+        }
+
+        &:last-of-type {
+          @apply border-none;
+        }
+      }
+    }
+  }
+
+  &__content {
+    @apply p-4;
+  }
+}

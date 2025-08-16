@@ -1,0 +1,44 @@
+
+.hero-section {
+  @apply relative w-full h-[650px] bg-cover bg-center overflow-hidden;
+
+  &__overlay {
+    @apply absolute inset-0 bg-black opacity-50;
+  }
+
+  &__background {
+    @apply absolute w-full h-full object-cover block;
+  }
+
+  &__content {
+    @apply absolute inset-0 flex flex-col items-center justify-center text-center text-text-light;
+  }
+
+  &__title {
+    @apply text-6xl font-bold mb-4 tracking-wider;
+  }
+
+  &__subtitle {
+    @apply text-3xl tracking-widest;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    //Ratio 1:1
+    @apply h-0;
+    padding-bottom: 100%;
+
+    &__title {
+      @apply text-6xl;
+    }
+
+    &__subtitle {
+      @apply text-3xl;
+    }
+  }
+
+  .content-grid {
+    @apply grid-cols-1;
+  }
+}

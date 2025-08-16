@@ -1,0 +1,46 @@
+.accordition {
+  @apply relative bg-primary-light m-4 rounded-lg overflow-hidden;
+  @apply border border-primary-border;
+
+  &__item {
+    @apply w-full overflow-hidden bg-white;
+    @apply border-b-[1px] border-primary-border;
+
+    &__title {
+      @apply w-full flex justify-between items-center py-2 px-4;
+      transition: background-color 0.3s ease, color 0.3s ease;
+
+      &__icon {
+        @apply transition-transform duration-300;
+      }
+
+      &--active {
+        @apply text-text-light bg-primary-main;
+
+        .accordition__item__title__icon {
+          transform: rotate(0deg);
+        }
+      }
+
+      &--inactive {
+        @apply text-text-dark bg-primary-light;
+
+        &:hover {
+          @apply bg-primary-hover;
+        }
+
+        .accordition__item__title__icon {
+          transform: rotate(-90deg);
+        }
+      }
+    }
+
+    &__content {
+      @apply text-text-dark m-4;
+    }
+    
+    &:last-of-type {
+      @apply border-none;
+    }
+  }
+}

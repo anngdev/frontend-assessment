@@ -1,0 +1,47 @@
+.card-section {
+  @apply py-12 px-12 mx-auto max-w-[calc(300px*3+2*12*4px)];
+}
+
+.card-grid {
+  @apply grid gap-12 justify-center grid-cols-3;
+}
+
+.item-card {
+  @apply flex flex-col text-center p-4 w-full;
+  @apply transition-all duration-300;
+  @apply bg-white rounded-lg border-primary-light border-[1px] shadow-sm;
+
+  &__image-wrapper {
+    @apply relative w-full overflow-hidden mb-4;
+    padding-top: 75%;
+  }
+
+  &__image {
+    @apply absolute inset-0 w-full h-full object-cover;
+  }
+
+  &__description {
+    @apply text-text-dark mb-4;
+  }
+
+  &__read-more-button {
+    @apply transition-colors bg-white px-4 py-2 mt-auto inline-block mx-auto;
+    @apply text-text-dark uppercase font-bold tracking-[0.15em];
+    @apply border-[3px] border-primary-main rounded-[999px];
+  }
+
+  &__read-more-button:hover {
+    @apply text-text-light bg-primary-hover;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .card-section {
+    @apply w-full px-8;
+  }
+
+  .card-grid {
+    @apply grid-cols-1;
+  }
+}
